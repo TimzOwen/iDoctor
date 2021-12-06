@@ -7,4 +7,17 @@
     <color name="teal_700">#FF018786</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+
+    <color name="blue">#1E90FF</color>
+    <color name="red">#D82020</color>
+    <color name="otpTextColor">#000000</color>
+
+    <!--colors for modern ui-->
+    <color name="whiteTextColor">#fff</color>
+    <color name="primaryTextColor">#078BF4</color>
+    <color name="loginBkColor">#f0f0f0</color>
+    <color name="lightBlue">#75B9EF</color>
+
+    <!--colors for card-->
+    <color name="whiteCardColor">#fff</color>
 </resources>

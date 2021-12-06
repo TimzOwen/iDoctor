@@ -1,3 +1,10 @@
 <resources>
     <string name="app_name">iDoctor</string>
+    <string name="my_med_dashboard">My,Med dashboard</string>
+    <string name="my_calendar">My calendar</string>
+    <string name="hospitals">Hospitals</string>
+    <string name="dr_s_appointment">Dr\'s appointment</string>
+    <string name="online_therapy">Online Therapy</string>
+    <string name="emergency">Emergency</string>
+    <string name="prescription">Prescription</string>
 </resources>
