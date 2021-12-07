@@ -12,4 +12,11 @@
     <string name="calendar">calendar</string>
     <string name="idoctor">idoctor</string>
     <string name="legal_support">Legal Support</string>
+    <string name="group_therapy">Group Therapy</string>
+    <string name="schedule_check_up">Schedule Check up</string>
+    <string name="welcome_to_your_activities">Welcome to your activities</string>
+    <string name="bg">bg</string>
+    <string name="check_my_prescription">Check my prescription</string>
+    <string name="book_an_appointment">Book an Appointment</string>
+    <string name="book_therapy_session">Book Therapy Session</string>
 </resources>
