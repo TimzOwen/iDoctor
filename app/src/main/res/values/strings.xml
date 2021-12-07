@@ -10,4 +10,6 @@
     <string name="therapy">therapy</string>
     <string name="medication">medication</string>
     <string name="calendar">calendar</string>
+    <string name="idoctor">idoctor</string>
+    <string name="legal_support">Legal Support</string>
 </resources>
