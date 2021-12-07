@@ -7,7 +7,6 @@
     android:layout_height="match_parent"
     tools:context=".CalenderActivity">
 
-
     <ImageView
         android:id="@+id/iv_calender"
         android:layout_width="match_parent"
@@ -62,7 +61,4 @@
         android:text="@string/book_therapy_session"
         android:layout_below="@id/btn_bookAppointment"
         android:layout_margin="15dp"/>
-
-
-
 </RelativeLayout>
