@@ -7,7 +7,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:itemCount="5"
-tools:listitem="@layout/emergeny_layout_list"
+    tools:listitem="@layout/emergeny_layout_list"
     app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
     tools:context=".EmergencyActivity">
 
