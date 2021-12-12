@@ -19,4 +19,6 @@
     <string name="check_my_prescription">Check my prescription</string>
     <string name="book_an_appointment">Book an Appointment</string>
     <string name="book_therapy_session">Book Therapy Session</string>
+    <string name="nairobi_hospital">Nairobi Hospital</string>
+    <string name="call">call</string>
 </resources>
