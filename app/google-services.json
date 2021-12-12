@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "106644645595",
+    "project_id": "idoctor-3d93e",
+    "storage_bucket": "idoctor-3d93e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:106644645595:android:a6c7aeec741d1f30204efe",
+        "android_client_info": {
+          "package_name": "com.timzowen.idoctor"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "106644645595-f4rqcr0d41gbd68hpvggl21if1evefti.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDg79EokzHaaMn8KHEnSrRUwAA4D6QhD1E"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "106644645595-f4rqcr0d41gbd68hpvggl21if1evefti.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
