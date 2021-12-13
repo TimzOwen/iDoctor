@@ -37,7 +37,7 @@ class MainActivity : AppCompatActivity() {
         }
 
         cardIDoctorActivity.setOnClickListener {
-            startActivity(Intent(this, IDoctorActivity::class.java))
+            startActivity(Intent(this, DoctorsProfileActivity::class.java))
         }
 
         cardLegalSupportActivity.setOnClickListener{

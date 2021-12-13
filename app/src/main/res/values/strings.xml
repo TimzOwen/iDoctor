@@ -27,4 +27,7 @@
     <string name="date">Date</string>
     <string name="join_meeting">Join Meeting</string>
     <string name="zoom">zoom</string>
+    <string name="doctors_name">Doctors name</string>
+    <string name="_5_years_experience">5 years experience</string>
+    <string name="here_from_me">Here from me</string>
 </resources>
