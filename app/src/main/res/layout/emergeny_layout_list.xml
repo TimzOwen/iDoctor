@@ -29,7 +29,7 @@
             android:layout_height="wrap_content"
             android:textSize="18sp"
             android:text="@string/nairobi_hospital"
-            android:layout_weight="2"
+            android:layout_weight="1"
             android:textStyle="bold"
             android:layout_margin="10dp"/>
 
