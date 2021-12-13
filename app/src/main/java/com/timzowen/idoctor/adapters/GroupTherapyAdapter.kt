@@ -3,6 +3,7 @@ package com.timzowen.idoctor.adapters
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.timzowen.idoctor.R
@@ -11,6 +12,7 @@ import com.timzowen.idoctor.model.GroupTherapy
 class GroupTherapyAdapter (private val mListZoomMeetings : ArrayList<GroupTherapy>) : RecyclerView.Adapter<GroupTherapyAdapter.ViewHolder>(){
 
     class ViewHolder (itemView : View) : RecyclerView.ViewHolder(itemView){
+        val ivZoomPic : ImageView = itemView.findViewById(R.id.iv_zoomImage)
         val tvZoomTopic : TextView = itemView.findViewById(R.id.tv_zoomTopic)
         val tvZoomLeadDoctor : TextView = itemView.findViewById(R.id.tv_leadDoctor)
         val tvZoomDate : TextView = itemView.findViewById(R.id.tv_zoomDate)
@@ -26,8 +28,9 @@ class GroupTherapyAdapter (private val mListZoomMeetings : ArrayList<GroupTherap
         val currentZoomMeeting = mListZoomMeetings[position]
 
         holder.tvZoomTopic.text = currentZoomMeeting.topic
-        holder.tvZoomLeadDoctor.text = currentZoomMeeting.leadDoctor
+        holder.tvZoomLeadDoctor.text = currentZoomMeeting.leader
         holder.tvZoomDate.text = currentZoomMeeting.date
+        holder.ivZoomPic.setImageResource(currentZoomMeeting.zoomImage)
 
     }
 

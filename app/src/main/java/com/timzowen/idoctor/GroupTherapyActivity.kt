@@ -26,6 +26,7 @@ class GroupTherapyActivity : AppCompatActivity() {
 
         userArrayList = arrayListOf<GroupTherapy>()
 
+        getUserData()
 
     }
 
@@ -43,7 +44,6 @@ class GroupTherapyActivity : AppCompatActivity() {
                     userRecyclerView.adapter = GroupTherapyAdapter(userArrayList)
                 }
             }
-
             override fun onCancelled(error: DatabaseError) {
                 //Toast a network error
             }
