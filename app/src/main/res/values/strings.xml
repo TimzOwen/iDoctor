@@ -22,4 +22,9 @@
     <string name="nairobi_hospital">Nairobi Hospital</string>
     <string name="call">call</string>
     <string name="nairobi">Nairobi</string>
+    <string name="topic">Topic</string>
+    <string name="lead_doctor">Lead doctor</string>
+    <string name="date">Date</string>
+    <string name="join_meeting">Join Meeting</string>
+    <string name="zoom">zoom</string>
 </resources>
