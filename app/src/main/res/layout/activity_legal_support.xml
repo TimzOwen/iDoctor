@@ -1,10 +1,111 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout
+<ScrollView
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+   android:layout_height="match_parent"
+    android:layout_width="match_parent">
+<androidx.appcompat.widget.LinearLayoutCompat
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_margin="5dp"
+    android:layout_height="wrap_content"
     tools:context=".LegalSupportActivity">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/report_your_case_here"
+        android:layout_margin="5dp"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:textColor="@color/blue"
+        android:layout_gravity="center"/>
+
+    <ImageView
+        android:src="@drawable/law"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:scaleType="centerCrop"
+        android:layout_margin="5dp"
+        android:contentDescription="@string/law" />
+
+
+    <EditText
+        android:id="@+id/et_hospName"
+        android:hint="@string/hospital_name"
+        android:layout_width="match_parent"
+        android:inputType="text"
+        android:layout_height="wrap_content"
+        android:autofillHints="Hospital" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="10dp"
+        android:textStyle="bold"
+        android:text="@string/type_of_case"/>
+
+    <EditText
+        android:id="@+id/et_type_of_case"
+        android:hint="@string/charges_or_abuse_or_sexual_or_mistreat"
+        android:layout_width="match_parent"
+        android:inputType="text"
+        android:layout_height="wrap_content"
+        android:autofillHints="Hospital" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="10dp"
+        android:textStyle="bold"
+        android:text="@string/date_of_occurrence"/>
+
+    <EditText
+        android:id="@+id/et_date_occurrence"
+        android:hint="@string/date_of_occurrence"
+        android:layout_width="match_parent"
+        android:inputType="date"
+        android:layout_height="wrap_content"
+        android:autofillHints="Hospital" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="10dp"
+        android:textStyle="bold"
+        android:text="@string/who_was_involve_in_the_case"/>
+
+    <EditText
+        android:id="@+id/et_victim_involved"
+        android:hint="@string/patient_doctorb_manager_security"
+        android:layout_width="match_parent"
+        android:inputType="text"
+        android:layout_height="wrap_content"
+        android:autofillHints="patient" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="10dp"
+        android:textStyle="bold"
+        android:text="@string/brief_description"/>
+    <EditText
+        android:id="@+id/et_brief_desc"
+        android:hint="@string/brief_description_of_the_case"
+        android:layout_width="match_parent"
+        android:inputType="text"
+        android:maxLines="4"
+        android:layout_height="wrap_content"
+        android:autofillHints="patient" />
+
+    <Button
+        android:id="@+id/btn_submitCase"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/submit_case"
+        android:layout_margin="10dp"/>
+
+</androidx.appcompat.widget.LinearLayoutCompat>
+</ScrollView>
