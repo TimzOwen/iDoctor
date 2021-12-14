@@ -28,13 +28,13 @@
     <string name="join_meeting">Join Meeting</string>
     <string name="zoom">zoom</string>
     <string name="doctors_name">Doctors name</string>
-    <string name="_5_years_experience">5 years experience</string>
     <string name="here_from_me">Here from me</string>
     <string name="hospital_name">Hospital Name / Branch /town</string>
     <string name="report_your_case_here">Report your case Here</string>
     <string name="type_of_case">Type of Case</string>
     <string name="charges_or_abuse_or_sexual_or_mistreat">Charges or Abuse or sexual or Mistreat</string>
-    <string name="date_of_occurrence">Date of occurrence</string>
+    <string name="date_of_occurrence">Date / Month / Year</string>
+    <string name="date_occured">Date of Incident</string>
     <string name="who_was_involve_in_the_case">Who was involve in the case?</string>
     <string name="patient_doctorb_manager_security">Patient/ doctor/ manager / security ?</string>
     <string name="submit_case">Submit Case</string>
