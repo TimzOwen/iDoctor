@@ -15,6 +15,22 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.IDoctor">
         <activity
+            android:name=".LoginActivity"
+            android:exported="false" />
+        <activity
+            android:name=".SignUpActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.login.LoginActivity"
+            android:exported="false"
+            android:label="@string/title_activity_login" />
+        <activity
+            android:name=".ui.SignUpActivity"
+            android:exported="false" />
+        <activity
+            android:name=".PrescriptionActivity"
+            android:exported="false" />
+        <activity
             android:name=".BookAppointmentActivity"
             android:exported="false" />
         <activity

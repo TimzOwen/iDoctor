@@ -22,5 +22,9 @@ class CalenderActivity : AppCompatActivity() {
             startActivity(Intent(this, IDoctorActivity::class.java))
         }
 
+        calenderBinding.btnCheckPrescription.setOnClickListener {
+            startActivity(Intent(this,PrescriptionActivity::class.java))
+        }
+
     }
 }
