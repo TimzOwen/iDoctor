@@ -14,6 +14,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.IDoctor">
         <activity
+            android:name=".HospitalLocationActivity"
+            android:exported="false" />
+        <activity
             android:name=".DoctorsProfileActivity"
             android:exported="false" />
         <activity
