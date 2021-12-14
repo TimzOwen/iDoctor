@@ -41,4 +41,16 @@
     <string name="brief_description">Brief Description</string>
     <string name="brief_description_of_the_case">Brief Description of the case</string>
     <string name="law">Law</string>
+    <string name="make_an_appointment">Make an Appointment</string>
+    <string name="your_full_names">Your Full Names</string>
+    <string name="official_names">Official Names</string>
+    <string name="you_have_your_nhif_card">You have your NHIF card?</string>
+    <string name="yes_or_no">Yes or No</string>
+    <string name="reason_for_appointment">Reason for appointment</string>
+    <string name="check_up_scanning">Check up? scanning</string>
+    <string name="your_date_of_availability">Your Date of availability</string>
+    <string name="date_month_year">Date / Month / Year</string>
+    <string name="phone_number">Phone Number</string>
+    <string name="your_phonenumber">Your PhoneNumber</string>
+    <string name="book_appointment">Book Appointment</string>
 </resources>
