@@ -1,9 +1,8 @@
 package com.timzowen.idoctor.data
 
-import android.telephony.emergency.EmergencyNumber
 import com.timzowen.idoctor.model.EmergencyNumbers
 
-class DataEmergency() {
+class DataEmergency {
 
     fun loadCalls() : List<EmergencyNumbers>{
         return listOf(
