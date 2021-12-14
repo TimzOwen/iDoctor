@@ -70,4 +70,12 @@
     <string name="invalid_username">Not a valid username</string>
     <string name="invalid_password">Password must be >5 characters</string>
     <string name="login_failed">"Login failed"</string>
+    <string name="welcome_to_idoctor">welcome to iDoctor</string>
+    <string name="get_all_your_medication_online">Get all your medication online</string>
+    <string name="usernameSignUP">UserName</string>
+    <string name="your_age">Your age</string>
+    <string name="create_account">Create Account</string>
+    <string name="phone_number_premium_users">Phone number -premium users-</string>
+    <string name="create_account_user">create account</string>
+    <string name="member_login">Member? Login</string>
 </resources>
