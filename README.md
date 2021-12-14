@@ -19,11 +19,14 @@ Screenshot of final app
 --------------
 
 ---------------------------
+Log in                                             |  Create Account
+:----------------------------------------------------:|:-------------------------:
+![Alt text](screenshots/signin.jpeg)  |  ![Alt text](screenshots/signup.jpeg?)
 Main Page                                             |  Landing Page
 :----------------------------------------------------:|:-------------------------:
 ![Alt text](screenshots/main_page.jpeg)  |  ![Alt text](screenshots/landing.jpeg?)
 Emergency Contacts                                        |  Chat Page
-![Alt text](screenshots/contact.jpeg?)    |  ![Alt text](screenshots/chat.jpeg?)
+![Alt text](screenshots/emergency.jpeg?)    |  ![Alt text](screenshots/chat.jpeg?)
 Reporting Incident                                        |  Meeting Scheduling
 ![Alt text](screenshots/reporting1.jpeg?)    |  ![Alt text](screenshots/meeting.jpeg?)
 Find Hospital                                        |   Hospital Locations
