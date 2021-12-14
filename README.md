@@ -1,13 +1,5 @@
-# iDoctor
+## iDoctor
 Get your personal health care in one app
-## Databinding-Kotlin
-
-Using view Model, adapters , data class and view binding to build efficient UI and backend .
-
-Databinding Kotlin GADS21
-==================================
-
-Simulating a speaker session profile using recyclerView in android and binding the views with adapters and viewHolder
 
 
 
@@ -18,11 +10,12 @@ Screenshot of final app
 Main Page                                             |  Landing Page
 :----------------------------------------------------:|:-------------------------:
 ![Alt text](screenshots/main_page.jpeg)  |  ![Alt text](screenshots/landing.jpeg?)
-main activity                                         |  speaker3
-![Alt text](screenshots/speakers.png)    |  ![Alt text](screenshots/speaker2.png?)
-main activity                                         |  speaker3
-![Alt text](screenshots/speakers.png)    |  ![Alt text](screenshots/speaker2.png?)
-
+Emergency Contacts                                        |  Chat Page
+![Alt text](screenshots/contact.jpeg?)    |  ![Alt text](screenshots/chat.jpeg?)
+Reporting Incident                                        |  Meeting Scheduling
+![Alt text](screenshots/reporting1.jpeg?)    |  ![Alt text](screenshots/meeting.jpeg?)
+Find Hospital                                        |   Hospital Locations
+![Alt text](screenshots/search_hospital.jpeg?)    |  ![Alt text](screenshots/map.jpeg?)
 
 Getting Started
 ---------------
