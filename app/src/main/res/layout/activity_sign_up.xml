@@ -12,21 +12,12 @@
         android:layout_gravity="center"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_margin="10dp"
+        android:layout_marginTop="10dp"
         android:textColor="@color/blue"
         android:textSize="20sp"
         android:textStyle="bold"
         android:text="@string/welcome_to_idoctor"/>
 
-    <TextView
-        android:layout_gravity="center"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_margin="10dp"
-        android:textColor="@color/blue"
-        android:textSize="16sp"
-        android:textStyle="italic"
-        android:text="@string/get_all_your_medication_online"/>
     <ImageView
         android:layout_gravity="center"
         android:layout_width="300dp"
@@ -44,23 +35,40 @@
     <EditText
         android:id="@+id/et_userName_signup"
         android:layout_width="match_parent"
-        android:layout_margin="5dp"
+       android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:textColorHint="@color/black"
         android:layout_height="wrap_content"
         android:hint="@string/usernameSignUP"/>
     <EditText
         android:id="@+id/et_age"
         android:layout_width="match_parent"
-        android:layout_margin="5dp"
+       android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:textColorHint="@color/black"
         android:layout_height="wrap_content"
         android:hint="@string/your_age"/>
     <EditText
+        android:id="@+id/et_phoneNumber_signup"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:textColorHint="@color/black"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
         android:hint="@string/phone_number_premium_users"/>
+    <EditText
+        android:id="@+id/et_password"
+        android:textColorHint="@color/black"
+        android:layout_width="match_parent"
+        android:layout_marginEnd="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_height="wrap_content"
+        android:hint="@string/password"/>
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="10dp"
+        android:layout_marginStart="10dp"
         android:text="@string/create_account_user"/>
     <TextView
         android:id="@+id/tv_member_login"

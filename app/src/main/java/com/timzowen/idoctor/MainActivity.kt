@@ -29,10 +29,10 @@ class MainActivity : AppCompatActivity() {
         }
 
         cardCalenderActivity.setOnClickListener{
-            startActivity(Intent(this,CalenderActivity::class.java))
+            startActivity(Intent(this,SignUpActivity::class.java))
         }
         cardGroupTherapyActivity.setOnClickListener {
-            startActivity(Intent(this, GroupTherapyActivity::class.java))
+            startActivity(Intent(this, LoginActivity::class.java))
         }
 
         cardIDoctorActivity.setOnClickListener {

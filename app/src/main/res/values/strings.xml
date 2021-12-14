@@ -78,4 +78,10 @@
     <string name="phone_number_premium_users">Phone number -premium users-</string>
     <string name="create_account_user">create account</string>
     <string name="member_login">Member? Login</string>
+    <string name="password">Password</string>
+    <string name="enter_username">Enter UserName</string>
+    <string name="login">Login</string>
+    <string name="Emergency">Emergency</string>
+    <string name="sign_up">sign up</string>
+    <string name="login_to_idoctor">Login to iDoctor</string>
 </resources>
