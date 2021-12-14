@@ -22,7 +22,7 @@ class MainActivity : AppCompatActivity() {
 
         // start all the activities in the main activity ->cards
         cardLocateHospitalActivity.setOnClickListener {
-            startActivity(Intent(this, LocateHospitalActivity::class.java))
+            startActivity(Intent(this, HospitalLocationActivity::class.java))
         }
 
         cardEmergencyActivity.setOnClickListener {

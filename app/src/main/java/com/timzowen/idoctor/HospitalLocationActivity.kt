@@ -20,7 +20,7 @@ class HospitalLocationActivity : AppCompatActivity() {
 
         Handler().postDelayed({
             progressDialog.dismiss()
-        },2000)
+        },6000)
 
     }
 
@@ -36,8 +36,6 @@ class HospitalLocationActivity : AppCompatActivity() {
         progressDialog.show()
 
         mapview.settings.javaScriptEnabled = true
-        mapview.loadUrl("https://www.google.com/search?tbs=lf:1,lf_ui:4&tbm=lcl&sxsrf=AOaemvL9oD6zl54Fi9B9Z-XaevPAnR1Asg:1639472348488&q=google" +
-                "+maps+kenya+hospitals&rflfq=1&num=10&sa=X&ved=2ahUKEwjh7My39uL0AhVs7OAKHTMTB2AQjGp6BAgDEDc&biw=1920&bih=947&dpr=1#rlfi=hd:;si:;mv:[[-0." +
-                "2654674733999653,36.118273265434325],[-0.29945601250896203,36.053900249076904],null,[-0.28246175537936413,36.086086757255615],15]")
+        mapview.loadUrl("https://www.google.com/maps/@-1.262591,36.8127474,17z")
     }
 }
