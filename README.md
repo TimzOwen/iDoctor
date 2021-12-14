@@ -25,12 +25,14 @@ Log in                                             |  Create Account
 Main Page                                             |  Landing Page
 :----------------------------------------------------:|:-------------------------:
 ![Alt text](screenshots/main_page.jpeg)  |  ![Alt text](screenshots/landing.jpeg?)
-Emergency Contacts                                        |  Chat Page
-![Alt text](screenshots/emergency.jpeg?)    |  ![Alt text](screenshots/chat.jpeg?)
+Book Appointment                                        |  Chat Page
+![Alt text](screenshots/book.jpeg?)    |  ![Alt text](screenshots/chat.jpeg?)
 Reporting Incident                                        |  Meeting Scheduling
 ![Alt text](screenshots/reporting1.jpeg?)    |  ![Alt text](screenshots/meeting.jpeg?)
 Find Hospital                                        |   Hospital Locations
 ![Alt text](screenshots/search_hospital.jpeg?)    |  ![Alt text](screenshots/map.jpeg?)
+Emergency Contacts                                        
+![Alt text](screenshots/emergency.jpeg?)     
 
 
 <!-- Just a typo-->
