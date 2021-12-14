@@ -1,7 +1,6 @@
 package com.timzowen.idoctor
 
 import android.content.Intent
-import android.media.Ringtone
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.cardview.widget.CardView

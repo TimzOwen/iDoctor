@@ -59,13 +59,13 @@
         android:layout_gravity="center"
         android:layout_margin="10dp"
         android:textStyle="bold"
-        android:text="@string/date_of_occurrence"/>
+        android:text="@string/date_occured"/>
 
     <EditText
         android:id="@+id/et_date_occurrence"
         android:hint="@string/date_of_occurrence"
         android:layout_width="match_parent"
-        android:inputType="date"
+        android:inputType="text"
         android:layout_height="wrap_content"
         android:autofillHints="Hospital" />
     <TextView

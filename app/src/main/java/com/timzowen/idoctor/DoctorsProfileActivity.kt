@@ -17,6 +17,5 @@ class DoctorsProfileActivity : AppCompatActivity() {
 
         recyclerView.adapter = DoctorsProfileAdapter(dataDoctors)
 
-
     }
 }

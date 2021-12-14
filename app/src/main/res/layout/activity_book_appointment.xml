@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent">
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_margin="5dp"
+        android:layout_height="wrap_content"
+        tools:context=".LegalSupportActivity">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/make_an_appointment"
+            android:layout_margin="5dp"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:textColor="@color/blue"
+            android:layout_gravity="center"/>
+
+        <ImageView
+            android:src="@drawable/group4"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:scaleType="centerCrop"
+            android:layout_margin="5dp"
+            android:contentDescription="@string/law" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+            android:textStyle="bold"
+            android:text="@string/your_full_names"/>
+
+        <EditText
+            android:id="@+id/et_appointmentNames"
+            android:hint="@string/official_names"
+            android:layout_width="match_parent"
+            android:inputType="text"
+            android:layout_height="wrap_content"
+            android:autofillHints="Hospital" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+            android:textStyle="bold"
+            android:text="@string/you_have_your_nhif_card"/>
+
+        <EditText
+            android:id="@+id/et_appointmentNHIFStatus"
+            android:hint="@string/yes_or_no"
+            android:layout_width="match_parent"
+            android:inputType="text"
+            android:layout_height="wrap_content"
+            android:autofillHints="Hospital" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+            android:textStyle="bold"
+            android:text="@string/reason_for_appointment"/>
+        <EditText
+            android:id="@+id/et_appointmentReason"
+            android:hint="@string/check_up_scanning"
+            android:layout_width="match_parent"
+            android:inputType="text"
+            android:layout_height="wrap_content"
+            android:autofillHints="Hospital" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+            android:textStyle="bold"
+            android:text="@string/your_date_of_availability"/>
+
+        <EditText
+            android:id="@+id/et_appointmentDate"
+            android:hint="@string/date_month_year"
+            android:layout_width="match_parent"
+            android:inputType="text"
+            android:layout_height="wrap_content"
+            android:autofillHints="patient" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+            android:textStyle="bold"
+            android:text="@string/phone_number"/>
+
+        <EditText
+            android:id="@+id/et_appointmentNumber"
+            android:hint="@string/your_phonenumber"
+            android:layout_width="match_parent"
+            android:inputType="number"
+            android:layout_height="wrap_content"
+            android:autofillHints="patient"
+            tools:ignore="TextFields" />
+        <Button
+            android:id="@+id/btn_bookAppointment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/book_appointment"
+            android:layout_margin="10dp"/>
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+</ScrollView>
