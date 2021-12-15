@@ -36,14 +36,15 @@ class PrescriptionActivity : AppCompatActivity() {
     }
 
     private fun sendPrescription(userName : String){
-        db = FirebaseDatabase.getInstance().getReference("Users")
+
+        db = FirebaseDatabase.getInstance().getReference("USers")
         db.child(userName).get().addOnSuccessListener {
 
             if (it.exists()){
 
                 val firstName = it.child("firstName").value
                 val administered = it.child("administered").value
-                val medName = it.child("medName").value
+                val medName = it.child("medname").value
 
                 Toast.makeText(this, "Prescription Done fetching....", Toast.LENGTH_SHORT).show()
 

@@ -43,5 +43,9 @@ class SignUpActivity : AppCompatActivity() {
                 Toast.makeText(this, "Failed, try again..", Toast.LENGTH_LONG).show()
             }
         }
+        binding.tvMemberLogin.setOnClickListener{
+            startActivity(Intent(this,LoginActivity::class.java))
+        }
+
     }
 }

@@ -33,6 +33,8 @@ Find Hospital                                        |   Hospital Locations
 ![Alt text](screenshots/search_hospital.jpeg?)    |  ![Alt text](screenshots/map.jpeg?)
 Emergency Contacts                             | Database JSON Format           
 ![Alt text](screenshots/emergency.jpeg?)     | ![database](screenshots/database.jpeg?)
+Prescription
+![Alt text](screenshots/prescription.jpeg?)  |
 
 
 <!-- Just a typo-->
