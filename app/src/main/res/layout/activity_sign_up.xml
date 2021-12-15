@@ -1,10 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.appcompat.widget.LinearLayoutCompat
+<ScrollView
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+   android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<androidx.appcompat.widget.LinearLayoutCompat
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_height="wrap_content"
     android:orientation="vertical"
     tools:context=".SignUpActivity">
 
@@ -65,7 +68,7 @@
         android:layout_height="wrap_content"
         android:hint="@string/password"/>
     <Button
-        android:id="@+id/btn_createUserAccount"
+        android:id="@+id/btn_createUserAccountf"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="10dp"
@@ -80,5 +83,5 @@
         android:textStyle="bold"
         android:textSize="16sp"
         android:textColor="@color/black"/>
-
 </androidx.appcompat.widget.LinearLayoutCompat>
+</ScrollView>

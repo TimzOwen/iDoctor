@@ -1,5 +1,6 @@
 package com.timzowen.idoctor
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Toast
@@ -19,7 +20,7 @@ class SignUpActivity : AppCompatActivity() {
         binding = ActivitySignUpBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        binding.btnCreateUserAccount.setOnClickListener {
+        binding.btnCreateUserAccountf.setOnClickListener {
 
             val fName = binding.etUserNameSignup.text.toString()
             val age = binding.etAge.text.toString()
@@ -35,6 +36,9 @@ class SignUpActivity : AppCompatActivity() {
                 binding.etPhoneNumberSignup.text.clear()
 
                 Toast.makeText(this, "Account created....", Toast.LENGTH_LONG).show()
+
+                startActivity(Intent(this,LoginActivity::class.java))
+
             }.addOnFailureListener {
                 Toast.makeText(this, "Failed, try again..", Toast.LENGTH_LONG).show()
             }
