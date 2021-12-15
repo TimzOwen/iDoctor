@@ -5,7 +5,6 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.cardview.widget.CardView
 
-
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -18,31 +17,24 @@ class MainActivity : AppCompatActivity() {
         val cardIDoctorActivity : CardView = findViewById(R.id.card_iDoctor)
         val cardLegalSupportActivity : CardView = findViewById(R.id.card_legal_support)
 
-
         // start all the activities in the main activity ->cards
         cardLocateHospitalActivity.setOnClickListener {
             startActivity(Intent(this, HospitalLocationActivity::class.java))
         }
-
         cardEmergencyActivity.setOnClickListener {
             startActivity(Intent(this, EmergencyActivity::class.java))
         }
-
-        cardCalenderActivity.setOnClickListener{
-            startActivity(Intent(this,SignUpActivity::class.java))
+        cardCalenderActivity.setOnClickListener {
+            startActivity(Intent(this, CalenderActivity::class.java))
         }
         cardGroupTherapyActivity.setOnClickListener {
-            startActivity(Intent(this, LoginActivity::class.java))
+            startActivity(Intent(this, GroupTherapyActivity::class.java))
         }
-
         cardIDoctorActivity.setOnClickListener {
             startActivity(Intent(this, DoctorsProfileActivity::class.java))
         }
-
         cardLegalSupportActivity.setOnClickListener{
             startActivity(Intent(this,LegalSupportActivity::class.java))
         }
-
     }
-
 }
