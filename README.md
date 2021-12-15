@@ -31,7 +31,7 @@ Reporting Incident                                        |  Meeting Scheduling
 ![Alt text](screenshots/reporting1.jpeg?)    |  ![Alt text](screenshots/meeting.jpeg?)
 Find Hospital                                        |   Hospital Locations
 ![Alt text](screenshots/search_hospital.jpeg?)    |  ![Alt text](screenshots/map.jpeg?)
-Emergency Contacts                                        
+Emergency Contacts                             | Database JSON Format           
 ![Alt text](screenshots/emergency.jpeg?)     | ![database](screenshots/database.jpeg?)
 
 
