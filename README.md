@@ -32,7 +32,7 @@ Reporting Incident                                        |  Meeting Scheduling
 Find Hospital                                        |   Hospital Locations
 ![Alt text](screenshots/search_hospital.jpeg?)    |  ![Alt text](screenshots/map.jpeg?)
 Emergency Contacts                                        
-![Alt text](screenshots/emergency.jpeg?)     | ![database](screenshots/database.PNG?)
+![Alt text](screenshots/emergency.jpeg?)     | ![database](screenshots/database.jpeg?)
 
 
 <!-- Just a typo-->
