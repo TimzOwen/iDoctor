@@ -7,7 +7,7 @@ class DataDoctorsProfile {
 
     // temp data for lead counselors
 
-    fun loafDoctorsProfile(): List<DoctorsProfile> {
+    fun loadDoctorsProfile(): List<DoctorsProfile> {
         return listOf(
             DoctorsProfile(
                 R.drawable.doctor1,
