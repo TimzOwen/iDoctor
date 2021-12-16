@@ -18,11 +18,17 @@ class DoctorsProfileActivity : AppCompatActivity(), DoctorsProfileAdapter.onItem
 
         recyclerView.adapter = DoctorsProfileAdapter(this,dataDoctors,this)
         recyclerView.hasFixedSize()
-        
+
     }
 
     override fun onItemClick(position: Int) {
-
+        //Toast to check array list size.
         Toast.makeText(this, "You click on Doctor $position", Toast.LENGTH_SHORT).show()
+
+        when(position){
+            0 -> Toast.makeText(this, "Dr. Timz Owen", Toast.LENGTH_SHORT).show()
+            1 -> Toast.makeText(this, "Dr. Allan kibet", Toast.LENGTH_SHORT).show()
+            2 -> Toast.makeText(this, "Dr. Marini Clement", Toast.LENGTH_SHORT).show()
+        }
     }
 }

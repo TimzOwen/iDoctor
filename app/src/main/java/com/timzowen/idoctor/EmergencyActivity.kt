@@ -6,7 +6,7 @@ import androidx.recyclerview.widget.RecyclerView
 import com.timzowen.idoctor.adapters.EmergencyAdapter
 import com.timzowen.idoctor.data.DataEmergency
 
-class EmergencyActivity : AppCompatActivity() {
+class EmergencyActivity : AppCompatActivity(),EmergencyAdapter.onItemClickListener {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_emergency)
@@ -18,7 +18,12 @@ class EmergencyActivity : AppCompatActivity() {
         val dataNumbers = DataEmergency().loadCalls()
 
         // map all the data in the adapter
-        recyclerviewEmergency.adapter = EmergencyAdapter(dataNumbers)
+        recyclerviewEmergency.adapter = EmergencyAdapter(this,dataNumbers,this)
+        recyclerviewEmergency.hasFixedSize()
 
+    }
+
+    override fun onItemClick(position: Int) {
+        // use Dialogs here to trigger the calls
     }
 }
