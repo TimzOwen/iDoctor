@@ -56,9 +56,7 @@ class DoctorsProfileAdapter (
 
     //create an interface to listen to each click item
     interface onItemClickListener {
-
         fun onItemClick(position: Int)
-
     }
 
 
