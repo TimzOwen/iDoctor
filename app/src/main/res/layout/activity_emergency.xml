@@ -6,7 +6,7 @@
     android:id="@+id/recycler_emergency"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:itemCount="5"
+    tools:itemCount="6"
     tools:listitem="@layout/emergeny_layout_list"
     app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
     tools:context=".EmergencyActivity">

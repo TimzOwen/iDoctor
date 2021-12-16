@@ -1,5 +1,7 @@
 package com.timzowen.idoctor
 
+import android.content.Intent
+import android.net.Uri
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.recyclerview.widget.RecyclerView
@@ -25,5 +27,29 @@ class EmergencyActivity : AppCompatActivity(),EmergencyAdapter.onItemClickListen
 
     override fun onItemClick(position: Int) {
         // use Dialogs here to trigger the calls
+        when(position){
+            0 ->{
+                // pull the contact and extra to phone log
+               val nairobiHospital = Intent(Intent.ACTION_CALL)
+                nairobiHospital.data = Uri.parse("tel" + "0722000000")
+                startActivity(nairobiHospital)
+            }
+            1 ->{
+                val kabarakHospital = Intent(Intent.ACTION_CALL)
+                kabarakHospital.data = Uri.parse("tel" + "0721000000")
+                startActivity(kabarakHospital)
+            }
+            2 -> {
+                val mercyHosp = Intent(Intent.ACTION_CALL)
+                mercyHosp.data = Uri.parse("tel" + "0723000000")
+                startActivity(mercyHosp)
+
+            }
+            3 -> {
+                val mediHeal = Intent(Intent.ACTION_CALL)
+                mediHeal.data = Uri.parse("tel" + "0724000000")
+                startActivity(mediHeal)
+            }
+        }
     }
 }
