@@ -65,9 +65,6 @@
         android:layout_below="@+id/relative_name"
         android:paddingVertical="10dp">
 
-
-
-
     </RelativeLayout>
 
     <View

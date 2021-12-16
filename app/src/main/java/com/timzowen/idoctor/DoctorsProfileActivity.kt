@@ -1,5 +1,6 @@
 package com.timzowen.idoctor
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Toast
@@ -26,7 +27,12 @@ class DoctorsProfileActivity : AppCompatActivity(), DoctorsProfileAdapter.onItem
         Toast.makeText(this, "You click on Doctor $position", Toast.LENGTH_SHORT).show()
 
         when(position){
-            0 -> Toast.makeText(this, "Dr. Timz Owen", Toast.LENGTH_SHORT).show()
+            0 -> {
+                val doctorNameProfile = Intent(this,IDoctorActivity::class.java)
+                doctorNameProfile.putExtra("name",position)
+                doctorNameProfile.putExtra("Quote",position)
+                startActivity(doctorNameProfile)
+            }
             1 -> Toast.makeText(this, "Dr. Allan kibet", Toast.LENGTH_SHORT).show()
             2 -> Toast.makeText(this, "Dr. Marini Clement", Toast.LENGTH_SHORT).show()
         }
