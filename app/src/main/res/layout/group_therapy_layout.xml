@@ -42,6 +42,7 @@
             android:layout_marginStart="10dp"
             android:text="@string/date"
             android:textStyle="bold" />
+
         <Button
             android:id="@+id/btn_joinZoom"
             android:layout_width="match_parent"
