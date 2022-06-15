@@ -19,14 +19,14 @@
             android:exported="false" />
         <activity
             android:name=".SignUpActivity"
-            android:exported="false" />
-        <activity
-            android:name=".ui.login.LoginActivity"
-            android:exported="false"
-            android:label="@string/title_activity_login" />
-        <activity
-            android:name=".ui.SignUpActivity"
-            android:exported="false" />
+            android:exported="true" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
         <activity
             android:name=".PrescriptionActivity"
             android:exported="false" />
@@ -48,9 +48,7 @@
         <activity
             android:name=".LegalSupportActivity"
             android:exported="false" />
-        <activity
-            android:name=".LocateHospitalActivity"
-            android:exported="false" />
+
         <activity
             android:name=".EmergencyActivity"
             android:exported="false" />
@@ -60,11 +58,7 @@
         <activity
             android:name=".MainActivity"
             android:exported="true">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
         </activity>
     </application>
 

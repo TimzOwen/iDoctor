@@ -15,7 +15,7 @@ class CalenderActivity : AppCompatActivity() {
         setContentView(calenderBinding.root)
 
         calenderBinding.btnBookAppointment.setOnClickListener {
-            startActivity(Intent(this, BookAppointmentActivity::class.java))
+            startActivity(Intent(this, IDoctorActivity::class.java))
         }
 
         calenderBinding.btnBookTherapy.setOnClickListener {

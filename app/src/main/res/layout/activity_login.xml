@@ -30,6 +30,7 @@
         android:layout_margin="10dp"
         android:textColorHint="@color/black"/>
     <Button
+        android:id="@+id/btn_login"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/login"
@@ -40,12 +41,14 @@
         android:orientation="horizontal">
 
         <Button
+            android:id="@+id/btn_call_emergency"
             android:layout_width="0dp"
             android:layout_weight="1"
             android:layout_margin="10dp"
             android:layout_height="wrap_content"
             android:text="@string/emergency"/>
         <Button
+            android:id="@+id/btn_signUp"
             android:layout_width="0dp"
             android:layout_weight="1"
             android:layout_margin="10dp"

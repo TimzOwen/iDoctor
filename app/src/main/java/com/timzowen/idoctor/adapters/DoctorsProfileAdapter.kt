@@ -1,6 +1,6 @@
 package com.timzowen.idoctor.adapters
 
-import android.annotation.SuppressLint
+import android.content.Context
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -10,21 +10,37 @@ import androidx.recyclerview.widget.RecyclerView
 import com.timzowen.idoctor.R
 import com.timzowen.idoctor.model.DoctorsProfile
 
-class DoctorsProfileAdapter (private val mDoctorsList : List<DoctorsProfile>) : RecyclerView.Adapter<DoctorsProfileAdapter.ViewHolder>(){
+class DoctorsProfileAdapter (
+    private val context : Context,
+    private val mDoctorsList : List<DoctorsProfile>,
+    val listener: onItemClickListener) : RecyclerView.Adapter<DoctorsProfileAdapter.ItemViewHolder>(){
 
-    class ViewHolder(ItemView : View) : RecyclerView.ViewHolder(ItemView){
+
+    inner class ItemViewHolder(private val view : View) : RecyclerView.ViewHolder(view), View.OnClickListener{
         val imageProfile : ImageView = itemView.findViewById(R.id.iv_doctor_profile)
         val imageChatIcon : ImageView = itemView.findViewById(R.id.iv_chat_counsel_iconImage)
         val tvDoctorName : TextView = itemView.findViewById(R.id.doctor_chat_userName)
         val tvQuote : TextView = itemView.findViewById(R.id.tv_quote_chat_doctor)
+
+        init {
+            itemView.setOnClickListener(this)
+            }
+
+        override fun onClick(v: View?) {
+            val position = adapterPosition
+            if (position!=RecyclerView.NO_POSITION){
+                listener.onItemClick(position)
+            }
+        }
+
     }
 
-    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): DoctorsProfileAdapter.ViewHolder {
+    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): DoctorsProfileAdapter.ItemViewHolder {
         val view = LayoutInflater.from(parent.context).inflate(R.layout.doctor_profile_layout,parent,false)
-        return ViewHolder(view)
+        return ItemViewHolder(view)
     }
 
-    override fun onBindViewHolder(holder: DoctorsProfileAdapter.ViewHolder, position: Int) {
+    override fun onBindViewHolder(holder: ItemViewHolder, position: Int) {
         //get the current doctor profile and match to the layout
         val currentDoctor = mDoctorsList[position]
 
@@ -36,6 +52,11 @@ class DoctorsProfileAdapter (private val mDoctorsList : List<DoctorsProfile>) : 
 
     override fun getItemCount(): Int {
         return mDoctorsList.size
+    }
+
+    //create an interface to listen to each click item
+    interface onItemClickListener {
+        fun onItemClick(position: Int)
     }
 
 

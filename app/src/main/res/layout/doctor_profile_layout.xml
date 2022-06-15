@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.cardview.widget.CardView
     xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     xmlns:app="http://schemas.android.com/apk/res-auto"
@@ -13,13 +14,13 @@
         android:layout_height="match_parent"
         android:orientation="horizontal"
         android:padding="5dp">
-
-        <ImageView
-            android:id="@+id/iv_doctor_profile"
-            android:src="@drawable/doctor4"
+        <de.hdodenhof.circleimageview.CircleImageView
             android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginEnd="10dp"
+            android:id="@+id/iv_doctor_profile"
             android:scaleType="centerCrop"
-            android:layout_height="100dp"/>
+            android:src="@drawable/doctor4"/>
 
         <androidx.appcompat.widget.LinearLayoutCompat
             android:layout_width="match_parent"
@@ -27,7 +28,7 @@
             android:orientation="vertical">
             <TextView
                 android:id="@+id/doctor_chat_userName"
-                android:layout_width="match_parent"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="10dp"
                 android:text="@string/doctors_name"
@@ -55,6 +56,16 @@
 
             </androidx.appcompat.widget.LinearLayoutCompat>
 
+
         </androidx.appcompat.widget.LinearLayoutCompat>
 
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:textSize="8sp"
+            android:layout_marginEnd="15dp"
+            android:layout_marginTop="35dp"
+            android:text="@string/view_and_book"
+            tools:ignore="SmallSp" />
 </androidx.cardview.widget.CardView>

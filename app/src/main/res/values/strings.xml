@@ -84,4 +84,11 @@
     <string name="Emergency">Emergency</string>
     <string name="sign_up">sign up</string>
     <string name="login_to_idoctor">Login to iDoctor</string>
+    <string name="med_name">Med Name:</string>
+    <string name="view_and_book">View and Book</string>
+    <string name="dr_s_profile_and_contact">Dr. \'s Profile and Contact</string>
+    <string name="health_is_wealth">Health is wealth</string>
+    <string name="quote">Quote</string>
+    <string name="book_therapy">Book Therapy</string>
+    <string name="book_check_up">Book Check up</string>
 </resources>

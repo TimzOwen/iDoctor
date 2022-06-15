@@ -1,5 +1,6 @@
 package com.timzowen.idoctor
 
+import android.content.Context
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.recyclerview.widget.LinearLayoutManager
@@ -8,9 +9,9 @@ import com.google.firebase.database.*
 import com.timzowen.idoctor.adapters.GroupTherapyAdapter
 import com.timzowen.idoctor.model.GroupTherapy
 
-class GroupTherapyActivity : AppCompatActivity() {
+class GroupTherapyActivity : AppCompatActivity(), GroupTherapyAdapter.onItemClickListener {
 
-    //declare all the global database variables here
+    // Declare all the global database variables here
     private  lateinit var dbRef : DatabaseReference
     private lateinit var userRecyclerView : RecyclerView
     private lateinit var userArrayList: ArrayList<GroupTherapy>
@@ -20,34 +21,37 @@ class GroupTherapyActivity : AppCompatActivity() {
         setContentView(R.layout.activity_group_therapy)
 
         // set the recyclerView to use linear layout and have fixed size to avoid out of range
-        userRecyclerView  = findViewById(R.id.recycler_groupTherapy)
+        userRecyclerView = findViewById(R.id.recycler_groupTherapy)
+
         userRecyclerView.layoutManager = LinearLayoutManager(this)
-        userRecyclerView.hasFixedSize()
 
         userArrayList = arrayListOf<GroupTherapy>()
+        userRecyclerView.hasFixedSize()
 
-        getUserData()
-
-    }
-
-    //create a function to fetch links and data from firebase
-    private fun getUserData(){
         dbRef = FirebaseDatabase.getInstance().getReference("ZoomMeetings")
 
-        dbRef.addValueEventListener(object : ValueEventListener{
+        dbRef.addValueEventListener(object : ValueEventListener {
             override fun onDataChange(snapshot: DataSnapshot) {
-                if (snapshot.exists()){
-                    for (userSnapshot in snapshot.children){
+                if (snapshot.exists()) {
+                    for (userSnapshot in snapshot.children) {
                         val user = userSnapshot.getValue(GroupTherapy::class.java)
                         userArrayList.add(user!!)
                     }
-                    userRecyclerView.adapter = GroupTherapyAdapter(userArrayList)
+                    val adapter = GroupTherapyAdapter(this@GroupTherapyActivity,userArrayList,this@GroupTherapyActivity)
+                    userRecyclerView.adapter = adapter
+
                 }
             }
+
             override fun onCancelled(error: DatabaseError) {
                 //Toast a network error
             }
         })
+
+    }
+    override fun onItemClick(position: Int) {
+        // join Zoom meeting
+
     }
 
 
